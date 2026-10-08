@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tigo Music Mood</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container">
+    <h1>Tigo's Music Mood</h1>
+    <p>Choose a music genre and see how Tigo reacts.</p>
+
+    <img id="tigoImage" src="standard.png" alt="Tigo">
+
+    <h2 id="moodTitle">Tigo is waiting for music.</h2>
+    <p id="moodText">Choose a genre below.</p>
+
+    <p class="state">
+      Current State: <span id="currentState">Standard</span>
+    </p>
+
+    <div class="buttons">
+      <button onclick="changeMood('folk')">Folk</button>
+      <button onclick="changeMood('rnb')">R&B</button>
+      <button onclick="changeMood('hiphop')">Hip-Hop</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

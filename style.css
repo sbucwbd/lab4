@@ -1,0 +1,54 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f6f2ec;
+  text-align: center;
+  color: #333;
+}
+
+.container {
+  max-width: 650px;
+  margin: 40px auto;
+  padding: 20px;
+}
+
+#tigoImage {
+  width: 280px;
+  max-width: 90%;
+  margin: 20px 0;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+button {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 8px;
+  background-color: #b88b68;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.state {
+  font-weight: bold;
+}
+
+@media (max-width: 600px) {
+  .buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  button {
+    width: 180px;
+  }
+}
